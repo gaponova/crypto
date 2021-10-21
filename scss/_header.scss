@@ -1,0 +1,282 @@
+.header {
+  // position: fixed;
+  position: relative;
+  width: 100%;
+  //top: 8px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #313131;
+    z-index: 2;
+  }
+
+  &__body {
+    position: relative;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #FFF;
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  &__menu {}
+
+  &__list {
+    position: relative;
+    display: flex;
+    z-index: 2;
+
+    & li {
+      position: relative;
+    }
+
+    body.mouse & li:hover .header-sub__list {
+      display: block;
+    }
+
+    body.mouse & li:hover .arrow {
+      transform: rotate(-180deg);
+    }
+
+    &>li {
+      margin: 0 0 0 30px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding: 15px 20px;
+
+    &.parent {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &-sub__list {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    top: 30px;
+    left: 0;
+    padding: 20px 0 0 0;
+
+    &>li {
+      background-color: #fff;
+    }
+
+    body.touch &.open {
+      display: block;
+    }
+  }
+
+  &-sub__link {
+    display: inline-block;
+    color: #000;
+    padding: 5px 10px;
+  }
+
+  &__burger {
+    display: none;
+
+  }
+}
+
+/*Меню при скролле*/
+.bar-fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  animation: fixedMenu 1s forwards;
+  background-color: rgba(51, 51, 51, 0.8);
+  padding-top: 0;
+  transition: 0.5s;
+}
+
+@keyframes fixedMenu {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: -5px;
+  transition: 0.15s;
+
+  &.active {
+    transform: rotate(-180deg);
+  }
+}
+
+//DECO
+.content {
+  color: rgb(39, 39, 39);
+  padding-top: 50px;
+
+  & p {
+    margin-bottom: 10px;
+  }
+}
+
+//Кнопка Наверх
+#toTop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 75px;
+  cursor: pointer;
+  display: none;
+  background: #fff;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+  color: #323232;
+  /* border: 1px solid #ECF5FE; */
+  border-radius: 50%;
+  box-shadow: 0 3px 3px 0px #d8dde2;
+  z-index: 10;
+}
+
+#toTop:focus,
+#toTop:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+@media screen and (max-width: 992px) {
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header {
+
+    &__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: #505050;
+      padding-top: 70px;
+      transition: 0.3s;
+
+
+      &.active {
+        top: 0;
+      }
+    }
+
+    &__list {
+      display: block;
+      text-align: center;
+
+      &>li {
+        margin: 0 auto 10px;
+      }
+    }
+
+    &__link {
+      padding: 10px 15px;
+
+      &.parent {
+        margin: 0;
+      }
+    }
+
+    &-sub__list {
+      position: static;
+      text-align: center;
+      padding: 5px 0 0 0;
+    }
+
+    &__burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      z-index: 3;
+
+      &.active::before {
+        top: 9px;
+        transform: rotate(45deg);
+        transition: 0.3s;
+      }
+
+      &.active::after {
+        bottom: 9px;
+        transform: rotate(-45deg);
+        transition: 0.3s;
+      }
+
+      &.active span {
+        transform: scale(0);
+        transition: 0.3s;
+      }
+
+      & span {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: 0.3s;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: 0.3s;
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  .arrow {
+    position: relative;
+    top: 5px;
+  }
+}
