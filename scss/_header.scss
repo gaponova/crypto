@@ -48,7 +48,11 @@
     }
 
     body.mouse & li:hover .header-sub__list {
-      display: block;
+      // display: block;
+      visibility: visible;
+      height: auto;
+      top: 30px;
+      opacity: 1;
     }
 
     body.mouse & li:hover .arrow {
@@ -72,19 +76,25 @@
   }
 
   &-sub__list {
-    display: none;
+    // display: none;
+    visibility: hidden;
     position: absolute;
     min-width: 150px;
-    top: 30px;
+    height: 0;
+    top: 60px;
     left: 0;
     padding: 20px 0 0 0;
+    transition: 0.3s;
+    opacity: 0;
 
     &>li {
       background-color: #fff;
     }
 
     body.touch &.open {
-      display: block;
+      visibility: visible;
+      height: auto;
+      opacity: 1;
     }
   }
 
@@ -129,7 +139,7 @@
   height: 20px;
   top: 15px;
   right: -5px;
-  transition: 0.15s;
+  transition: 0.3s;
 
   &.active {
     transform: rotate(-180deg);
@@ -152,7 +162,7 @@
   height: 50px;
   position: fixed;
   bottom: 20px;
-  right: 75px;
+  right: 20px;
   cursor: pointer;
   display: none;
   background: #fff;
@@ -218,6 +228,7 @@
       position: static;
       text-align: center;
       padding: 5px 0 0 0;
+      transition: all 0s ease 0s;
     }
 
     &__burger {
@@ -278,5 +289,6 @@
   .arrow {
     position: relative;
     top: 5px;
+    transition: all 0s ease 0s;
   }
 }

@@ -167,7 +167,10 @@ body {
 }
 
 body.mouse .header__list li:hover .header-sub__list {
-  display: block;
+  visibility: visible;
+  height: auto;
+  top: 30px;
+  opacity: 1;
 }
 
 body.mouse .header__list li:hover .arrow {
@@ -191,12 +194,16 @@ body.mouse .header__list li:hover .arrow {
 }
 
 .header-sub__list {
-  display: none;
+  visibility: hidden;
   position: absolute;
   min-width: 150px;
-  top: 30px;
+  height: 0;
+  top: 60px;
   left: 0;
   padding: 20px 0 0 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 .header-sub__list > li {
@@ -204,7 +211,9 @@ body.mouse .header__list li:hover .arrow {
 }
 
 body.touch .header-sub__list.open {
-  display: block;
+  visibility: visible;
+  height: auto;
+  opacity: 1;
 }
 
 .header-sub__link {
@@ -257,8 +266,8 @@ body.touch .header-sub__list.open {
   height: 20px;
   top: 15px;
   right: -5px;
-  -webkit-transition: 0.15s;
-  transition: 0.15s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .arrow.active {
@@ -280,7 +289,7 @@ body.touch .header-sub__list.open {
   height: 50px;
   position: fixed;
   bottom: 20px;
-  right: 75px;
+  right: 20px;
   cursor: pointer;
   display: none;
   background: #fff;
@@ -336,6 +345,8 @@ body.touch .header-sub__list.open {
     position: static;
     text-align: center;
     padding: 5px 0 0 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
   .header__burger {
     display: block;
@@ -393,6 +404,8 @@ body.touch .header-sub__list.open {
   .arrow {
     position: relative;
     top: 5px;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
 }
 /*# sourceMappingURL=style.css.map */
