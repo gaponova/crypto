@@ -281,7 +281,7 @@ body.touch .header-sub__list.open {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 .header__btn {
@@ -487,6 +487,19 @@ body.touch .header-sub__list.open {
     top: 5px;
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__logo {
+    width: 100px;
+    margin-right: 0;
+  }
+  .header__btn {
+    margin: 0 10px;
+  }
+  .btn-token {
+    padding: 10px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -129,7 +129,7 @@ $pink: #e702bf;
     font-weight: 600;
     text-transform: uppercase;
     color: $f;
-    padding: 15px;
+    padding: 10px 15px;
   }
 
   &__btn {
@@ -339,5 +339,20 @@ $pink: #e702bf;
     position: relative;
     top: 5px;
     transition: all 0s ease 0s;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__logo {
+    width: 100px;
+    margin-right: 0;
+  }
+
+  .header__btn {
+    margin: 0 10px;
+  }
+
+  .btn-token {
+    padding: 10px 20px;
   }
 }
