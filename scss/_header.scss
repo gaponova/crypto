@@ -91,6 +91,10 @@ $pink: #e702bf;
     &:hover {
       color: $pink;
     }
+
+    &_active {
+      color: $tomato;
+    }
   }
 
   &-sub__list {
@@ -208,14 +212,14 @@ $pink: #e702bf;
   right: 20px;
   cursor: pointer;
   display: none;
-  background: #fff;
+  background: $m-purple;
   font-size: 22px;
   line-height: 50px;
   text-align: center;
-  color: #323232;
+  color: $pink;
   /* border: 1px solid #ECF5FE; */
   border-radius: 50%;
-  box-shadow: 0 3px 3px 0px #d8dde2;
+  //box-shadow: 0 3px 3px 0px #d8dde2;
   z-index: 10;
 }
 
@@ -253,6 +257,7 @@ $pink: #e702bf;
 
       &.active {
         top: 30px;
+        padding-bottom: 50px;
       }
     }
 

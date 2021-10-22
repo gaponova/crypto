@@ -248,6 +248,10 @@ body.mouse .header__list li:hover .arrow {
   color: #e702bf;
 }
 
+.header__link_active {
+  color: #ec5046;
+}
+
 .header-sub__list {
   visibility: hidden;
   position: absolute;
@@ -370,15 +374,13 @@ body.touch .header-sub__list.open {
   right: 20px;
   cursor: pointer;
   display: none;
-  background: #fff;
+  background: #350E59;
   font-size: 22px;
   line-height: 50px;
   text-align: center;
-  color: #323232;
+  color: #e702bf;
   /* border: 1px solid #ECF5FE; */
   border-radius: 50%;
-  -webkit-box-shadow: 0 3px 3px 0px #d8dde2;
-          box-shadow: 0 3px 3px 0px #d8dde2;
   z-index: 10;
 }
 
@@ -412,6 +414,7 @@ body.touch .header-sub__list.open {
   }
   .header__menu.active {
     top: 30px;
+    padding-bottom: 50px;
   }
   .header__list {
     display: block;
