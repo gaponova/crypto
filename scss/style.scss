@@ -3,10 +3,19 @@
 //Обнуляющие стили
 @import "_zero";
 
+//Переменные (цвета)
+$f: #fff;
+$purple: #300D50;
+$m-purple: #350E59;
+$d-purple: #2B0C47;
+$green: #2DE4C1;
+$tomato: #ec5046;
+$pink: #e702bf;
+
 body {
   font: 16px/1.4 'Poppins', sans-serif;
   background: #000;
-  color: #fff;
+  color: $f;
 }
 
 .wrapper {

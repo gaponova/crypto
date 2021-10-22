@@ -1,3 +1,12 @@
+//Переменные (цвета)
+$f: #fff;
+$purple: #300D50;
+$m-purple: #350E59;
+$d-purple: #2B0C47;
+$green: #2DE4C1;
+$tomato: #ec5046;
+$pink: #e702bf;
+
 .header {
   // position: fixed;
   position: relative;
@@ -5,6 +14,8 @@
   //top: 8px;
   top: 0;
   left: 0;
+  background: $purple;
+  padding: 30px 0;
   z-index: 50;
 
   &::before {
@@ -14,7 +25,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: #313131;
+    background: $purple;
     z-index: 2;
   }
 
@@ -29,14 +40,13 @@
 
   &__logo {
     position: relative;
-    width: 30px;
-    height: 30px;
-    background: #FFF;
-    border-radius: 50%;
+    margin-right: 20px;
     z-index: 3;
   }
 
-  &__menu {}
+  &__menu {
+    margin-left: auto;
+  }
 
   &__list {
     position: relative;
@@ -51,7 +61,7 @@
       // display: block;
       visibility: visible;
       height: auto;
-      top: 30px;
+      top: 50px;
       opacity: 1;
     }
 
@@ -60,15 +70,18 @@
     }
 
     &>li {
-      margin: 0 0 0 30px;
+      //margin: 0 0 0 30px;
     }
   }
 
   &__link {
     position: relative;
     display: inline-block;
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
     color: #fff;
-    padding: 15px 20px;
+    padding: 15px 15px;
 
     &.parent {
       margin: 0 20px 0 0;
@@ -79,16 +92,28 @@
     // display: none;
     visibility: hidden;
     position: absolute;
-    min-width: 150px;
+    width: 250px;
     height: 0;
     top: 60px;
     left: 0;
-    padding: 20px 0 0 0;
+    background-color: $d-purple;
+    //padding: 20px;
     transition: 0.3s;
+    border-radius: 20px;
     opacity: 0;
 
     &>li {
-      background-color: #fff;
+      background-color: $d-purple;
+      padding: 5px 20px;
+
+
+      &:first-child {
+        border-radius: 20px 20px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 20px 20px;
+      }
     }
 
     body.touch &.open {
@@ -99,13 +124,16 @@
   }
 
   &-sub__link {
-    display: inline-block;
-    color: #000;
-    padding: 5px 10px;
+    display: block;
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $f;
+    padding: 15px;
   }
 
   &__btn {
-    margin-left: auto;
+    margin-left: 20px;
     z-index: 10;
   }
 
@@ -124,7 +152,7 @@
   z-index: 999;
   animation: fixedMenu 1s forwards;
   background-color: rgba(51, 51, 51, 0.8);
-  padding-top: 0;
+  padding: 10px 0;
   transition: 0.5s;
 }
 
@@ -143,7 +171,7 @@
   width: 20px;
   height: 20px;
   top: 15px;
-  right: -5px;
+  right: 8px;
   transition: 0.3s;
 
   &.active {
@@ -187,13 +215,19 @@
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1055px) {
 
   body.lock {
     overflow: hidden;
   }
 
   .header {
+    padding: 10px 0;
+    background: $d-purple;
+
+    &::before {
+      background: $d-purple;
+    }
 
     &__menu {
       position: fixed;
@@ -202,13 +236,13 @@
       width: 100%;
       height: 100%;
       overflow: auto;
-      background: #505050;
+      background: $purple;
       padding-top: 70px;
       transition: 0.3s;
 
 
       &.active {
-        top: 0;
+        top: 20px;
       }
     }
 
@@ -222,7 +256,7 @@
     }
 
     &__link {
-      padding: 10px 15px;
+      padding: 6px 15px;
 
       &.parent {
         margin: 0;
@@ -231,9 +265,19 @@
 
     &-sub__list {
       position: static;
+      width: 100%;
       text-align: center;
       padding: 5px 0 0 0;
+      border-radius: 0;
       transition: all 0s ease 0s;
+    }
+
+    &-sub__link {
+      padding: 10px;
+    }
+
+    &__btn {
+      margin: 0 20px 0 auto;
     }
 
     &__burger {
