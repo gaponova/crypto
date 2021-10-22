@@ -82,9 +82,14 @@ $pink: #e702bf;
     text-transform: uppercase;
     color: #fff;
     padding: 15px 15px;
+    transition: 0.3s;
 
     &.parent {
       margin: 0 20px 0 0;
+    }
+
+    &:hover {
+      color: $pink;
     }
   }
 
@@ -130,6 +135,11 @@ $pink: #e702bf;
     text-transform: uppercase;
     color: $f;
     padding: 10px 15px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $pink;
+    }
   }
 
   &__btn {
@@ -242,7 +252,7 @@ $pink: #e702bf;
 
 
       &.active {
-        top: 20px;
+        top: 30px;
       }
     }
 
@@ -252,6 +262,10 @@ $pink: #e702bf;
 
       &>li {
         margin: 0 auto 10px;
+
+        &:last-child {
+          margin-bottom: 39px;
+        }
       }
     }
 

@@ -236,10 +236,16 @@ body.mouse .header__list li:hover .arrow {
   text-transform: uppercase;
   color: #fff;
   padding: 15px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__link.parent {
   margin: 0 20px 0 0;
+}
+
+.header__link:hover {
+  color: #e702bf;
 }
 
 .header-sub__list {
@@ -282,6 +288,12 @@ body.touch .header-sub__list.open {
   text-transform: uppercase;
   color: #fff;
   padding: 10px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-sub__link:hover {
+  color: #e702bf;
 }
 
 .header__btn {
@@ -399,7 +411,7 @@ body.touch .header-sub__list.open {
     transition: 0.3s;
   }
   .header__menu.active {
-    top: 20px;
+    top: 30px;
   }
   .header__list {
     display: block;
@@ -407,6 +419,9 @@ body.touch .header-sub__list.open {
   }
   .header__list > li {
     margin: 0 auto 10px;
+  }
+  .header__list > li:last-child {
+    margin-bottom: 39px;
   }
   .header__link {
     padding: 6px 15px;
