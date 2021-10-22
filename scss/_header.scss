@@ -104,13 +104,18 @@
     padding: 5px 10px;
   }
 
+  &__btn {
+    margin-left: auto;
+    z-index: 10;
+  }
+
   &__burger {
     display: none;
 
   }
 }
 
-/*Меню при скролле*/
+//Меню при скролле
 .bar-fixed {
   position: sticky;
   top: 0;
