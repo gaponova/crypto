@@ -24,15 +24,19 @@ body {
   justify-content: space-between;
 }
 
-.main {
-  flex: 1 1 auto;
-}
-
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.main {
+  flex: 1 1 auto;
+}
+
+.title {}
+
+
 
 .btn {
   position: relative;
@@ -73,4 +77,8 @@ body {
   }
 }
 
+//Стили для header
 @import "_header";
+
+//Стили для блока intro
+@import "_intro";
