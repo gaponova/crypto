@@ -6,7 +6,8 @@
         "../scss/_zero.scss",
         "../scss/_header.scss",
         "../scss/_intro.scss",
-        "../scss/_secure.scss"
+        "../scss/_secure.scss",
+        "../scss/_start.scss"
     ],
     "names": [],
     "file": "style.css"
