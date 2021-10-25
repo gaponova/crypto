@@ -42,6 +42,12 @@ $pink: #e702bf;
     padding: 50px 40px 60px;
     margin: 10px 10px 30px;
     border-radius: 20px;
+    transition: 0.5s;
+
+    &:hover {
+      box-shadow: 0 0 100px 0px rgba(96, 52, 167, 0.5);
+      z-index: 10;
+    }
   }
 
   &__item {}
@@ -70,8 +76,14 @@ $pink: #e702bf;
   }
 }
 
-.circle-btn {}
+@media (max-width: 1100px) {
+  .secure__column {
+    flex: 1 1 calc(50% - 30px);
+  }
+}
 
-.fas {}
-
-.fa-chevron-right {}
+@media (max-width: 768px) {
+  .secure__column {
+    flex: 1 1 100%;
+  }
+}
