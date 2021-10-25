@@ -7,6 +7,15 @@ $green: #2DE4C1;
 $tomato: #ec5046;
 $pink: #e702bf;
 
+//Миксин
+@mixin font($ff, $fz, $lh, $fw, $c) {
+  font-family: $ff;
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $c;
+}
+
 .header {
   // position: fixed;
   position: relative;
