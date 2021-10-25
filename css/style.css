@@ -22,7 +22,7 @@
 a:focus,
 a:active {
   outline: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 a,
@@ -711,13 +711,10 @@ body.touch .header-sub__list.open {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 20px;
   }
   .intro-actions__present {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
     margin-left: 0;
-    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

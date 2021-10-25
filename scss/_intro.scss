@@ -172,12 +172,11 @@ $pink: #e702bf;
 
     &__play {
       flex-direction: column;
+      margin-bottom: 20px;
     }
 
     &__present {
-      order: -1;
       margin-left: 0;
-      margin-bottom: 20px;
     }
   }
 
