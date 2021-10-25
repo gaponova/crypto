@@ -348,8 +348,6 @@ body.touch .header-sub__list.open {
 
 .arrow {
   position: absolute;
-  width: 20px;
-  height: 20px;
   top: 15px;
   right: 8px;
   -webkit-transition: 0.3s;
@@ -506,7 +504,7 @@ body.touch .header-sub__list.open {
   }
   .arrow {
     position: relative;
-    top: 5px;
+    top: 0;
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
   }
@@ -618,9 +616,9 @@ body.touch .header-sub__list.open {
   cursor: pointer;
 }
 
-.pulse svg {
-  width: 50%;
-  fill: #fff;
+.pulse .fa-play-circle {
+  font-size: 22px;
+  color: #fff;
 }
 
 .pulse::before, .pulse::after {

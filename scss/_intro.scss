@@ -82,9 +82,9 @@ $pink: #e702bf;
   z-index: 5;
   cursor: pointer;
 
-  & svg {
-    width: 50%;
-    fill: #fff;
+  & .fa-play-circle {
+    font-size: 22px;
+    color: #fff;
   }
 
   &::before,

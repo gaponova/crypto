@@ -186,8 +186,6 @@ $pink: #e702bf;
 
 .arrow {
   position: absolute;
-  width: 20px;
-  height: 20px;
   top: 15px;
   right: 8px;
   transition: 0.3s;
@@ -360,7 +358,7 @@ $pink: #e702bf;
 
   .arrow {
     position: relative;
-    top: 5px;
+    top: 0;
     transition: all 0s ease 0s;
   }
 }
