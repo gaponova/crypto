@@ -1,0 +1,129 @@
+//Переменные (цвета)
+$f: #fff;
+$purple: #300D50;
+$m-purple: #350E59;
+$d-purple: #2B0C47;
+$green: #2DE4C1;
+$tomato: #ec5046;
+$pink: #e702bf;
+
+//Миксин
+@mixin font($ff, $fz, $lh, $fw, $c) {
+  font-family: $ff;
+  font-size: $fz;
+  line-height: $lh;
+  font-weight: $fw;
+  color: $c;
+}
+
+.start {
+  position: relative;
+  background-image: url(../img/start-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 13, 80, 0.8);
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__column {
+    flex: 1 1 50%;
+  }
+
+  &__item {
+
+    &_deco {
+      padding-bottom: 90%;
+    }
+
+    &_info {}
+  }
+}
+
+.section {}
+
+.container {}
+
+.item-start {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+
+  &__top {
+    margin-top: 55px;
+    margin-bottom: 45px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    @include font ("Poppins", 2.4rem, 140%, 700, $green);
+  }
+}
+
+.title {}
+
+.time-count {
+  max-width: 585px;
+  background-color: #00000033;
+  padding: 35px 10px;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 46px;
+}
+
+.time-count__content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.time-count__item {
+  width: 25%;
+}
+
+.time-count__val {
+  @include font ("Poppins", 4rem, 140%, 700, $f);
+}
+
+.time-count__text {
+  font-size: 20px;
+  @include font ("Rubik", 2rem, 140%, 400, $f);
+}
+
+
+.start-contribution {
+
+  &__number {
+    @include font ("Poppins", 3.6rem, 130%, 700, $f);
+    margin-right: 15px;
+  }
+
+  &__text {
+    @include font ("Poppins", 2.4rem, 140%, 700, $f);
+  }
+}
