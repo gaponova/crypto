@@ -116,6 +116,11 @@ $pink: #e702bf;
   }
 }
 
+.intro-actions__play:focus,
+.intro-actions__play:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 //Адаптив
 @media (max-width: 1366px) {
   .intro {
