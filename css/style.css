@@ -1067,6 +1067,98 @@ body.touch .header-sub__list.open {
   }
 }
 
+.benefits {
+  background: #300D50;
+}
+
+.benefits__title {
+  width: 540px;
+  margin: 0 auto 20px;
+}
+
+.benefits__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -10px;
+}
+
+.benefits__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(33.333% - 20px);
+          flex: 1 1 calc(33.333% - 20px);
+  margin: 10px 10px 23px;
+}
+
+.benefits__item {
+  padding: 52px 40px 54px;
+}
+
+.item-benefits {
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.item-benefits:hover, .item-benefits_active {
+  background: #2B0C47;
+  border-bottom: 1px solid #e702bf;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.item-benefits__icon {
+  width: 76px;
+  margin-bottom: 23px;
+}
+
+.item-benefits__title {
+  font-family: "Poppins";
+  font-size: 2rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.item-benefits__text {
+  font-family: "Rubik";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.action-benefits {
+  position: relative;
+}
+
+.action-benefits__link {
+  font-family: "Rubik";
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: 400;
+  color: #ec5046;
+}
+
+.action-benefits__icon {
+  position: absolute;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;

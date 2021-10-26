@@ -142,6 +142,9 @@ body {
 //Стили для блока start
 @import "_start";
 
+//Стили для секции benefits
+@import "_benefits";
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
