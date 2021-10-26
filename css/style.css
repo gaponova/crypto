@@ -224,8 +224,6 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: #300D50;
-  padding: 25px 0;
   z-index: 50;
 }
 
@@ -242,7 +240,6 @@ body {
 
 .header__body {
   position: relative;
-  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +282,7 @@ body {
 body.mouse .header__list li:hover .header-sub__list {
   visibility: visible;
   height: auto;
-  top: 55px;
+  top: 90px;
   opacity: 1;
 }
 
@@ -301,7 +298,7 @@ body.mouse .header__list li:hover .arrow {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  padding: 15px 15px;
+  padding: 44px 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -323,7 +320,7 @@ body.mouse .header__list li:hover .arrow {
   position: absolute;
   width: 250px;
   height: 0;
-  top: 80px;
+  top: 120px;
   left: 0;
   background-color: #2B0C47;
   -webkit-transition: 0.3s;
@@ -410,7 +407,7 @@ body.touch .header-sub__list.open {
 
 .arrow {
   position: absolute;
-  top: 15px;
+  top: 45px;
   right: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
