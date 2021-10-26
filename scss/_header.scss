@@ -228,7 +228,7 @@ $pink: #e702bf;
 
 @media screen and (max-width: 1366px) {
   body.mouse .header__list li:hover .header-sub__list {
-    top: 50px;
+    top: 80px;
   }
 }
 
@@ -240,7 +240,6 @@ $pink: #e702bf;
   }
 
   .header {
-    padding: 10px 0;
     background: $d-purple;
 
     &::before {

@@ -443,7 +443,7 @@ body.touch .header-sub__list.open {
 
 @media screen and (max-width: 1366px) {
   body.mouse .header__list li:hover .header-sub__list {
-    top: 50px;
+    top: 80px;
   }
 }
 
@@ -452,7 +452,6 @@ body.touch .header-sub__list.open {
     overflow: hidden;
   }
   .header {
-    padding: 10px 0;
     background: #2B0C47;
   }
   .header::before {
