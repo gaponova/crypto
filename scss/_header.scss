@@ -176,7 +176,6 @@ $pink: #e702bf;
   z-index: 999;
   animation: fixedMenu 1s forwards;
   background-color: rgba(51, 51, 51, 0.8);
-  padding: 10px 0;
   transition: 0.5s;
 }
 
@@ -241,6 +240,7 @@ $pink: #e702bf;
 
   .header {
     background: $d-purple;
+    padding: 10px 0;
 
     &::before {
       background: $d-purple;

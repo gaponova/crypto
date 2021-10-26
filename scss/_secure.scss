@@ -87,3 +87,9 @@ $pink: #e702bf;
     flex: 1 1 100%;
   }
 }
+
+@media (max-width: 500px) {
+  .secure__column {
+    padding: 20px 10px 40px;
+  }
+}
