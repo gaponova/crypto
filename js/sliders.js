@@ -19,7 +19,7 @@ const swiper = new Swiper('.map-slider',{
     
     320: {
       slidesPerView: 1,
-       speed: 500,
+      speed: 500,
       autoplay: {
       delay: 1000,
       disableOnInteraction: false,
@@ -28,7 +28,7 @@ const swiper = new Swiper('.map-slider',{
     
     768: {
       slidesPerView: 2,
-       speed: 500,
+      speed: 500,
       autoplay: {
       delay: 1000,
       disableOnInteraction: false,
@@ -37,7 +37,7 @@ const swiper = new Swiper('.map-slider',{
     
     992: {
       slidesPerView: 3,
-       speed: 500,
+      speed: 500,
       autoplay: {
       delay: 1000,
       disableOnInteraction: false,
