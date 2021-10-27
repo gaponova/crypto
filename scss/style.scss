@@ -145,6 +145,9 @@ body {
 //Стили для секции benefits
 @import "_benefits";
 
+//Стили для секции map
+@import "_map";
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;

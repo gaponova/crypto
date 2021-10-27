@@ -1,21 +1,3 @@
-//Переменные (цвета)
-$f: #fff;
-$purple: #300D50;
-$m-purple: #350E59;
-$d-purple: #2B0C47;
-$green: #2DE4C1;
-$tomato: #ec5046;
-$pink: #e702bf;
-
-//Миксин
-@mixin font($ff, $fz, $lh, $fw, $c) {
-  font-family: $ff;
-  font-size: $fz;
-  line-height: $lh;
-  font-weight: $fw;
-  color: $c;
-}
-
 .start {
   position: relative;
   background-image: url(../img/start-bg.jpg);

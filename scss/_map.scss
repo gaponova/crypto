@@ -1,0 +1,146 @@
+.map {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #381163 0%, #4F126B 100%);
+
+  &__container {
+    position: relative;
+    background-image: url('../img/map.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 100px 15px;
+  }
+
+  &__title {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+}
+
+.map-slider {
+
+
+  &__wrapper {}
+
+  &__slide {
+    padding: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 95px;
+      left: 0;
+      border-bottom: 1px solid rgba(231, 2, 191, 0.7);
+    }
+  }
+
+  &__date {
+    position: relative;
+    @include font ("Poppins", 1.4rem, 200%, 700, $f);
+    padding-bottom: 57px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 23px;
+      bottom: 49px;
+      display: block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $pink;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 30px;
+      bottom: 55px;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: $pink;
+      border-radius: 50%;
+    }
+  }
+
+  &__month {
+    display: inline-block;
+    width: 120px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid $pink;
+  }
+
+  &__text {
+    position: relative;
+    background: $m-purple;
+    padding: 35px 35px 50px;
+    border-radius: 20px;
+  }
+
+  &__info {
+    @include font ("Rubik", 1.6rem, 200%, 400, $f);
+    margin-bottom: 10px;
+  }
+
+  &__deco {
+    position: absolute;
+    top: -7px;
+    left: 25px;
+    width: 15px;
+    height: 15px;
+    background: $m-purple;
+    transform: rotate(-45deg);
+  }
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+
+
+.map-slider-action .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  top: 44%;
+  left: -10px;
+  color: #fff;
+  background-image: linear-gradient(90deg, #e702bf 0%, #ec5046 100%);
+  border-radius: 50%;
+}
+
+.map-slider-action .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  top: 44%;
+  right: -10px;
+  color: #fff;
+  background-image: linear-gradient(90deg, #e702bf 0%, #ec5046 100%);
+  border-radius: 50%;
+}
+
+.map-slider-action .swiper-button-prev::after,
+.map-slider-action .swiper-button-next::after {
+  font-size: 16px;
+}
+
+.map-slider-action .swiper-pagination {
+  bottom: 20px;
+}
+
+.map-slider-action .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: $tomato;
+  opacity: 1;
+}
+
+.map-slider-action .swiper-pagination-bullet-active {
+  background: $green;
+}
