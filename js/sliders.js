@@ -18,30 +18,15 @@ const swiper = new Swiper('.map-slider',{
   breakpoints: {
     
     320: {
-      slidesPerView: 1,
-      speed: 500,
-      autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-  },
+      slidesPerView: 2,
     },
     
     768: {
       slidesPerView: 2,
-      speed: 500,
-      autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-  },
     },
     
     992: {
       slidesPerView: 3,
-      speed: 500,
-      autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-  },
     }
   }
 });
