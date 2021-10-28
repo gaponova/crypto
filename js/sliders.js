@@ -1,4 +1,4 @@
-const swiper = new Swiper('.map-slider',{
+new Swiper('.map-slider',{
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -18,7 +18,7 @@ const swiper = new Swiper('.map-slider',{
   breakpoints: {
     
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     
     768: {
@@ -30,3 +30,21 @@ const swiper = new Swiper('.map-slider',{
     }
   }
 });
+
+new Swiper('.clients-slider',{
+  pagination: {
+    el: '.clients-swiper-pagination',
+    clickable: true,
+  },
+  
+  grabCursor: true,
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 1000,
+  spaceBetween: 30,
+});
+

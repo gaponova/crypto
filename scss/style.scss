@@ -151,6 +151,9 @@ body {
 //Стили для секции offer
 @import "_offer";
 
+//Стили для секции clients
+@import "_clients";
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
