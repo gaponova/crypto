@@ -1601,6 +1601,10 @@ body.touch .header-sub__list.open {
   margin-bottom: 40px;
 }
 
+.news-list__item:hover .news-list__title {
+  color: #ec5046;
+}
+
 .news-list__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1636,6 +1640,8 @@ body.touch .header-sub__list.open {
   font-weight: 600;
   color: #fff;
   margin-bottom: 11px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .news-list__by {

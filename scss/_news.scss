@@ -24,8 +24,14 @@
 
 .news-list {
 
+
   &__item:not(:last-child) {
     margin-bottom: 40px;
+
+  }
+
+  &__item:hover .news-list__title {
+    color: $tomato;
   }
 
   &__row {
@@ -53,6 +59,7 @@
   &__title {
     @include font('Poppins', 2rem, 140%, 600, $f);
     margin-bottom: 11px;
+    transition: 0.3s;
   }
 
   &__by {
