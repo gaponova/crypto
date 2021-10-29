@@ -1564,6 +1564,120 @@ body.touch .header-sub__list.open {
   }
 }
 
+.news {
+  background: #300D50;
+}
+
+.news__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.news__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-news {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.item-news__img {
+  margin-top: 10px;
+}
+
+.news-list__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.news-list__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.news-list__picture {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 122px;
+          flex: 0 0 122px;
+  height: auto;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.news-list__img {
+  display: block;
+  border-radius: 50%;
+}
+
+.news-list__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 65%;
+          flex: 1 1 65%;
+}
+
+.news-list__title {
+  font-family: "Poppins";
+  font-size: 2rem;
+  line-height: 140%;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 11px;
+}
+
+.news-list__by {
+  font-family: "Rubik";
+  font-size: 1.3rem;
+  line-height: 246%;
+  font-weight: 400;
+  color: #2DE4C1;
+  margin-right: 20px;
+}
+
+.news-list__by .far {
+  margin-right: 5px;
+}
+
+.news-list__date {
+  font-family: "Rubik";
+  font-size: 1.3rem;
+  line-height: 246%;
+  font-weight: 400;
+  color: #2DE4C1;
+}
+
+.news-list__date .far {
+  margin-right: 5px;
+}
+
+@media (max-width: 1020px) {
+  .news__row,
+  .news-list__row {
+    display: block;
+    text-align: center;
+  }
+  .news-list__picture {
+    margin: 0 auto;
+  }
+  .news-list__img {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
