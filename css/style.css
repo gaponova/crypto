@@ -1535,6 +1535,35 @@ body.touch .header-sub__list.open {
   background: #2DE4C1;
 }
 
+@media (max-width: 1100px) {
+  .clients__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .clients__col_info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(44% - 30px);
+            flex: 0 1 calc(44% - 30px);
+  }
+}
+
+@media (max-width: 992px) {
+  .clients__row {
+    display: block;
+  }
+  .clients__col_info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(44% - 30px);
+            flex: 0 1 calc(44% - 30px);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .clients__col_slider {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
