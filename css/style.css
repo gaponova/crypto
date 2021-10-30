@@ -1835,7 +1835,7 @@ body.touch .header-sub__list.open {
 }
 
 .subscribe-btn {
-  padding: 9px 15px;
+  padding: 9px 15px 10px;
 }
 
 @media (max-width: 1100px) {
@@ -1861,6 +1861,9 @@ body.touch .header-sub__list.open {
   .footer__col {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .subscribe-btn {
+    padding-bottom: 10px;
   }
 }
 
