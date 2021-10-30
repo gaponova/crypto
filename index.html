@@ -512,15 +512,15 @@
       <div class="footer__container container">
         <div class="footer__top">
           <div class="footer__row">
-            <div class="footer__col">
+            <div class="footer__col footer__col_social">
               <div class="footer__item item-footer">
                 <a href="#" class="footer__logo">
                   <img src="img/logo.png" alt="logo">
                 </a>
                 <div class="social">
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-google-plus-g"></i>
+                  <a class="social__link" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="social__link" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="social__link" href="#"><i class="fab fa-google-plus-g"></i></a>
                 </div>
               </div>
             </div>
@@ -551,13 +551,13 @@
                 </ul>
               </div>
             </div>
-            <div class="footer__col">
+            <div class="footer__col footer__col_big">
               <div class="footer__item item-footer">
                 <h3 class="item-footer__title">Subscribe to Our Newsletter</h3>
-                <form class="subscribe-form" action="" method="post">
+                <form class="subscribe-form" action="" method="">
                   <input class="subscribe-form__input" type="email" name="email" placeholder="Email Address">
                   <div class="subscribe-form__btn">
-                    <button class="subscribe-btn">Send</button>
+                    <button class="subscribe-btn btn"><span>Send</span></button>
                   </div>
                 </form>
               </div>
@@ -565,7 +565,7 @@
           </div>
         </div>
         <div class="footer__bottom">
-          <p>Copyright &copy; 2021 <span>Cripto</span> All rights reserved</p>
+          <p class="footer__copy">Copyright &copy; 2021 <span>Cripto</span> All rights reserved</p>
         </div>
       </div>
     </footer>
