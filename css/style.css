@@ -779,6 +779,7 @@ body.touch .header-sub__list.open {
 
 .secure {
   background: #300D50;
+  overflow: hidden;
 }
 
 .secure__title {
@@ -1764,6 +1765,11 @@ body.touch .header-sub__list.open {
   font-weight: 600;
   color: #fff;
   margin: 5px 0;
+  Transition: 0.3s;
+}
+
+.item-footer__link:hover {
+  color: #ec5046;
 }
 
 .item-footer__title {
@@ -1813,19 +1819,19 @@ body.touch .header-sub__list.open {
 }
 
 .subscribe-form__input::-webkit-input-placeholder {
-  color: #d3a2ff;
+  color: #755d8a;
 }
 
 .subscribe-form__input:-ms-input-placeholder {
-  color: #d3a2ff;
+  color: #755d8a;
 }
 
 .subscribe-form__input::-ms-input-placeholder {
-  color: #d3a2ff;
+  color: #755d8a;
 }
 
 .subscribe-form__input::placeholder {
-  color: #d3a2ff;
+  color: #755d8a;
 }
 
 .subscribe-form__btn {

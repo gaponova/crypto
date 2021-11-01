@@ -69,6 +69,11 @@
     display: inline-block;
     @include font('Poppins', 1.6rem, 160%, 600, $f);
     margin: 5px 0;
+    Transition: 0.3s;
+
+    &:hover {
+      color: $tomato;
+    }
   }
 
   &__title {
@@ -120,7 +125,7 @@
     border: 1px solid rgba(231, 2, 191, 0.4);
 
     &::placeholder {
-      color: #d3a2ff
+      color: #755d8a;
     }
   }
 
