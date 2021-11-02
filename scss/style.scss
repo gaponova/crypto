@@ -54,6 +54,10 @@ body {
   &_big {
     @include font('Poppins', 4.8rem, 140%, 700, $f);
   }
+
+  &_tomato {
+    color: $tomato;
+  }
 }
 
 
@@ -170,6 +174,9 @@ body {
 //Страница ABOUT
 //Стили для секции general-intro
 @import "_general-intro";
+
+//Стили для секции deposit
+@import "_deposit";
 
 @media (max-width: 500px) {
   .section {

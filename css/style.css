@@ -129,6 +129,10 @@ body {
   color: #fff;
 }
 
+.title_tomato {
+  color: #ec5046;
+}
+
 .btn {
   position: relative;
   display: -webkit-inline-box;
@@ -1910,9 +1914,201 @@ body.touch .header-sub__list.open {
   padding-top: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1100px) {
   .general__container {
     padding-top: 50px;
+  }
+}
+
+.deposit {
+  position: relative;
+}
+
+.deposit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 13, 80, 0.8);
+}
+
+.deposit__container {
+  position: relative;
+  z-index: 10;
+}
+
+.deposit__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.deposit__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 30px);
+          flex: 0 1 calc(50% - 30px);
+  margin: 0 15px 20px;
+}
+
+.deposit__column_info {
+  margin-top: -20px;
+}
+
+.deposit__item_deco {
+  padding-bottom: 90%;
+}
+
+.deposit__item_info {
+  margin-bottom: 34px;
+}
+
+.item-deposit {
+  position: relative;
+}
+
+.item-deposit__img {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.item-deposit__top {
+  margin-top: 55px;
+}
+
+.item-deposit__title {
+  margin-bottom: 8px;
+}
+
+.item-deposit__subtitle {
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #2DE4C1;
+  margin-bottom: 30px;
+}
+
+.item-deposit__text {
+  font-family: "Rubik";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.deposit-contribution__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.deposit-contribution__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.deposit-contribution__item:last-child {
+  margin-right: 0;
+}
+
+.deposit-contribution__title {
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.deposit-contribution__text {
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  line-height: 140%;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .deposit-contribution {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .deposit__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .deposit__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .deposit__item_deco {
+    padding: 0;
+  }
+  .item-deposit__img {
+    position: static;
+  }
+  .deposit-contribution__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .deposit-contribution__item {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  .deposit-contribution__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .deposit-contribution__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .deposit-contribution__title {
+    font-size: 30px;
+  }
+  .deposit-contribution__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .item-deposit__top {
+    margin: 15px 0;
   }
 }
 

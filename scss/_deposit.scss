@@ -1,0 +1,172 @@
+.deposit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 13, 80, 0.8);
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__column {
+    flex: 0 1 calc(50% - 30px);
+    margin: 0 15px 20px;
+
+    &_info {
+      margin-top: -20px;
+    }
+  }
+
+  &__item {
+
+    &_deco {
+      padding-bottom: 90%;
+    }
+
+    &_info {
+      margin-bottom: 34px;
+    }
+  }
+}
+
+.item-deposit {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+
+  &__top {
+    margin-top: 55px;
+
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    @include font ("Poppins", 2.4rem, 140%, 700, $green);
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include font ("Rubik", 1.6rem, 200%, 400, $f);
+    margin-bottom: 20px;
+  }
+}
+
+.deposit-contribution {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    @include font ("Poppins", 2.4rem, 140%, 700, $f);
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__number {}
+
+  &__text {
+    @include font ("Poppins", 2.4rem, 140%, 700, $f);
+  }
+}
+
+@media (max-width: 1100px) {
+  .deposit-contribution {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .deposit__row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .deposit__column {
+    flex: 1 1 100%;
+  }
+
+  .deposit__item_deco {
+    padding: 0;
+  }
+
+  .item-deposit__img {
+    position: static;
+  }
+
+  .deposit-contribution {
+    &__row {
+      justify-content: center;
+    }
+
+    &__item {
+      width: 40%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .deposit-contribution__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .deposit-contribution {
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+
+  }
+}
+
+@media (max-width: 320px) {
+  .item-deposit__top {
+    margin: 15px 0;
+  }
+
+}
