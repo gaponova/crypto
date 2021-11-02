@@ -50,7 +50,13 @@ body {
 
 .title {
   @include font ("Poppins", 4rem, 160%, 700, $f);
+
+  &_big {
+    @include font('Poppins', 4.8rem, 140%, 700, $f);
+  }
 }
+
+
 
 
 
@@ -161,6 +167,10 @@ body {
 //Стили для секции footer
 @import "_footer";
 
+//Страница ABOUT
+//Стили для секции general-intro
+@import "_general-intro";
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
@@ -168,6 +178,9 @@ body {
 
   .title {
     font-size: 2.5rem;
-    ;
+
+    &_big {
+      font-size: 3.8rem;
+    }
   }
 }

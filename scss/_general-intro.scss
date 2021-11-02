@@ -1,0 +1,26 @@
+.general-intro {
+  background-image: url('../img/arrow-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  text-align: center;
+}
+
+.general {
+
+  &__container {
+    padding-top: 100px;
+  }
+}
+
+.general {
+
+  &__title {}
+}
+
+@media (max-width: 500px) {
+  .general__container {
+    padding-top: 50px;
+  }
+}
