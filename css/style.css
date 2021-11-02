@@ -2260,8 +2260,22 @@ body.touch .header-sub__list.open {
   background: linear-gradient(90deg, #2B0C47 0%, #2B0C47 100%);
   padding: 35px 20px 25px;
   border-radius: 0 0 30px 30px;
+  overflow: hidden;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.item-advisor__info .fa-users {
+  position: absolute;
+  bottom: -100%;
+  right: 10px;
+  font-size: 60px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 20;
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .item-advisor__info:after {
@@ -2281,6 +2295,10 @@ body.touch .header-sub__list.open {
 
 .item-advisor__info:hover::after {
   opacity: 1;
+}
+
+.item-advisor__info:hover .fa-users {
+  bottom: 0;
 }
 
 .item-advisor__title {
