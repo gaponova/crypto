@@ -728,6 +728,12 @@ body.touch .header-sub__list.open {
   }
 }
 
+@media (max-width: 1100px) {
+  .intro {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .intro {
     background-image: url(../img/intro-bg-mobile.jpg);
