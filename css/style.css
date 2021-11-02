@@ -84,6 +84,7 @@ body {
 }
 
 .wrapper {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,8 +374,7 @@ body.touch .header-sub__list.open {
 }
 
 .bar-fixed {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
