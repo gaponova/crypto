@@ -1922,15 +1922,7 @@ body.touch .header-sub__list.open {
 
 .deposit {
   position: relative;
-}
-
-.deposit::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(48, 13, 80, 0.8);
+  padding-bottom: 0;
 }
 
 .deposit__container {
@@ -2109,6 +2101,115 @@ body.touch .header-sub__list.open {
 @media (max-width: 320px) {
   .item-deposit__top {
     margin: 15px 0;
+  }
+}
+
+.why__title {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.why__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.why__col {
+  width: calc(50% - 30px);
+  margin: 0 15px 20px;
+  padding-left: 20px;
+}
+
+.why__item {
+  margin-bottom: 30px;
+}
+
+.item-why__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-why__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  padding-right: 20px;
+}
+
+.item-why__img img {
+  padding-left: 20px;
+}
+
+.item-why__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 69%;
+          flex: 0 1 69%;
+}
+
+.item-why__title {
+  font-family: "Poppins";
+  font-size: 2rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.item-why__text {
+  font-family: "Rubik";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .why__col {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    padding-top: 50px;
+  }
+  .why__col {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .item-why__row {
+    display: block;
+    text-align: center;
+  }
+  .item-why__img img {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .why {
+    padding-top: 50px;
+  }
+  .why.section {
+    padding-top: 0;
+  }
+  .why__row {
+    margin: 0;
+  }
+  .why__col {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 

@@ -178,6 +178,10 @@ body {
 //Стили для секции deposit
 @import "_deposit";
 
+//Стили для секции why
+@import "_why";
+
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
