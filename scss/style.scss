@@ -183,6 +183,9 @@ body {
 //Стили для секции partners
 @import "_partners";
 
+//Стили для секции token
+@import "_token";
+
 
 @media (max-width: 500px) {
   .section {
