@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 -15px;
+
+    @media (max-width: 1180px) {
+      display: block;
+    }
   }
 
   &__item {
@@ -23,6 +27,14 @@
   &__title {
     @include font('Poppins', 3rem, 130%, 700, $f);
     margin-bottom: 40px;
+
+    @media (max-width: 1180px) {
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -30,6 +42,11 @@
 #myChart2 {
   max-width: 500px;
   max-height: 250px;
+
+  @media (max-width: 1180px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .charts-token {}
