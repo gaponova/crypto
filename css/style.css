@@ -2509,6 +2509,153 @@ body.touch .header-sub__list.open {
   max-height: 250px;
 }
 
+@media (max-width: 1100px) {
+  .skills__container {
+    max-width: 850px;
+  }
+}
+
+.skills__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .skills__row {
+    display: block;
+  }
+}
+
+.skills__col {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skills__col_info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 30px);
+          flex: 0 1 calc(50% - 30px);
+}
+
+@media (max-width: 1100px) {
+  .skills__col_info {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+}
+
+.skills__col_progress {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 30px);
+          flex: 0 1 calc(50% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+.skills__item {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .skills__item {
+    margin-bottom: 50px;
+  }
+}
+
+.skills__item:last-child {
+  margin: 0;
+}
+
+.item-skills__title {
+  font-family: "Poppins";
+  font-size: 4rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.item-skills__subtitle {
+  font-family: "Rubik";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.progress__title {
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  line-height: 200%;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 500px) {
+  .progress__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar__track {
+  height: 3px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ec5046), to(#e702bf));
+  background-image: linear-gradient(90deg, #ec5046 0%, #e702bf 100%);
+}
+
+.progress-bar__info {
+  position: relative;
+}
+
+.progress-bar__percent {
+  position: absolute;
+  bottom: 6px;
+  right: -16px;
+  width: 35px;
+  height: 35px;
+  font-family: "Rubik";
+  font-size: 1.3rem;
+  line-height: 35px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background: #e702bf;
+  border-radius: 50%;
+}
+
+.progress-bar__percent:after {
+  content: '';
+  position: absolute;
+  top: 33px;
+  left: 46%;
+  width: 3px;
+  height: 10px;
+  background: #e702bf;
+}
+
 @media (max-width: 500px) {
   .section {
     padding: 50px 0;
