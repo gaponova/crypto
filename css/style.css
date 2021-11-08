@@ -2682,6 +2682,12 @@ body.touch .header-sub__list.open {
   background: #e702bf;
 }
 
+@media (max-width: 500px) {
+  .chart {
+    display: none;
+  }
+}
+
 .chart__title {
   font-family: "Poppins";
   font-size: 3rem;
