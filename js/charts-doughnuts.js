@@ -1,4 +1,4 @@
-//hart myChart
+//chart myChart
 
 Chart.register(ChartDataLabels);
 Chart.defaults.font.size = 14;
@@ -58,7 +58,7 @@ let chart = new Chart(ctx, {
   }
 });
 
-//hart myChart2
+//chart myChart2
 
 let ctx_2 = document.getElementById('myChart2').getContext('2d');
 let chart2 = new Chart(ctx_2, {
@@ -115,3 +115,6 @@ let chart2 = new Chart(ctx_2, {
     }
   }
 });
+
+
+//chart lineChart

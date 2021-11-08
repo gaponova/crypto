@@ -183,11 +183,15 @@ body {
 //Стили для секции partners
 @import "_partners";
 
+//Страница TOKEN SALE
 //Стили для секции token
 @import "_token";
 
 //Стили для секции token
 @import "_skills";
+
+//Страница ROAD MAP
+@import "_chart";
 
 
 @media (max-width: 500px) {

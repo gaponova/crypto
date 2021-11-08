@@ -1,0 +1,10 @@
+.chart__title {
+  @include font ('Poppins', 3rem, 130%, 700, $f);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#lineChart {
+  width: 100%;
+  max-height: 600px;
+}
