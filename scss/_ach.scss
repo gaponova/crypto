@@ -1,0 +1,78 @@
+.ach {
+  position: relative;
+  background-image: url('../img/ach-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 13, 80, 0.8);
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+
+  &__item {
+    padding: 10px;
+    margin: 0 15px 20px;
+  }
+}
+
+.item-ach {
+  text-align: center;
+  width: calc(25% - 30px);
+
+  @media (max-width: 992px) {
+    width: calc(50% - 30px);
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
+  & .fas {
+    display: block;
+    font-size: 40px;
+    color: $tomato;
+    margin: 10px 10px 26px;
+  }
+
+  &__num {
+    display: inline-block;
+    @include font ('Poppins', 4rem, 100%, 600, $f);
+    margin-bottom: 10px;
+  }
+
+  &__plus {
+    display: inline-block;
+    @include font ('Poppins', 4rem, 100%, 600, $f);
+  }
+
+  &__info {
+    display: block;
+    @include font ('Poppins', 1.6rem, 160%, 600, $f);
+  }
+}
+
+.counter {}

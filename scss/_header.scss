@@ -136,6 +136,10 @@
     &:hover {
       color: $pink;
     }
+
+    &_active {
+      color: $tomato;
+    }
   }
 
   &__btn {
