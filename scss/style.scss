@@ -229,6 +229,10 @@ body {
 //Стили для секции tariff
 @import "_tariff";
 
+//Страница FAQ
+//Стили для секции ask
+@import "_ask";
+
 
 @media (max-width: 500px) {
   .section {
