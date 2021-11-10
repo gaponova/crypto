@@ -58,6 +58,10 @@ body {
   &_tomato {
     color: $tomato;
   }
+
+  &_green {
+    color: $green;
+  }
 }
 
 .btn {
@@ -150,7 +154,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(48, 13, 80, 0.8);
+    background-color: rgba(48, 13, 80, 0.7);
   }
 }
 
@@ -221,6 +225,10 @@ body {
 //Стили для секции team
 @import "_team";
 
+//Страница PRICING
+//Стили для секции tariff
+@import "_tariff";
+
 
 @media (max-width: 500px) {
   .section {
@@ -233,5 +241,7 @@ body {
     &_big {
       font-size: 3.8rem;
     }
+
+
   }
 }

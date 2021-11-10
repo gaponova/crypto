@@ -1,0 +1,76 @@
+.tariff {
+
+  &__container {}
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 - 10px;
+  }
+
+  &__item {}
+}
+
+.item-tariff {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc(33.33% - 20px);
+  margin: 0 10px 20px;
+  background: $d-purple;
+  padding: 60px;
+  border-radius: 30px;
+
+  @media (max-width: 1161px) {
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__price {
+    margin-bottom: 48px;
+  }
+
+  &__cost {
+    display: block;
+    @include font('Rubik', 6rem, normal, 400, $f);
+    margin-bottom: 8px;
+
+    & span {
+      @include font('Rubik', 2.4rem, normal, 400, $f);
+    }
+  }
+
+  &__period {
+    @include font('Rubik', 1.6rem, 200%, 400, $f);
+    color: $tomato;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__block {
+    margin-bottom: 16px;
+
+    & span {
+      display: block;
+      @include font('Rubik', 1.6rem, 200%, 400, $f);
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}
+
+.btn-tariff {
+  padding: 15px 30px;
+}
