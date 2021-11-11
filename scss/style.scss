@@ -233,6 +233,9 @@ body {
 //Стили для секции ask
 @import "_ask";
 
+//Стили для секции faq
+@import "_faq";
+
 
 @media (max-width: 500px) {
   .section {
