@@ -1,0 +1,78 @@
+.ask {
+
+  &__container {}
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -25px;
+  }
+
+  &__item {
+    flex: 1 1 calc(50% - 50px);
+    margin: 0 25px 20px;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+}
+
+.item-ask {
+
+  &__title {
+    @include font('Poppins', 4rem, 140%, 700, $f);
+    margin-bottom: 29px;
+  }
+
+  &__text:not(:last-child) {
+    @include font('Rubik', 1.6rem, 200%, 400, $f);
+    margin-bottom: 10px;
+  }
+}
+
+.ask-btn {}
+
+.spoilers {}
+
+.spoiler {
+
+  &__item {}
+
+  &__title {
+    position: relative;
+    @include font('Poppins', 1.6rem, 150%, 700, $f);
+    background: $d-purple;
+    padding: 14px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 23px;
+      width: 11px;
+      height: 2px;
+      background: $f;
+    }
+
+    &::before {
+      right: 40px;
+      transform: rotate(40deg);
+    }
+
+    &::after {
+      right: 32px;
+      transform: rotate(-40deg);
+    }
+  }
+
+  &__text {
+    display: none;
+    @include font('Rubik', 1.6rem, 200%, 400, $f);
+    padding: 30px;
+  }
+}
