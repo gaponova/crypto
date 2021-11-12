@@ -240,6 +240,10 @@ body {
 //Стили для секции blog-articles
 @import "_blog";
 
+//Страница CONTACT
+//Стили для секции map
+@import "_geo";
+
 
 @media (max-width: 500px) {
   .section {

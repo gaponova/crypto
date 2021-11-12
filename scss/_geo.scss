@@ -1,0 +1,15 @@
+.geo {
+
+  &__container {}
+
+  &__box {
+    position: relative;
+    width: 100%;
+    height: 600px;
+
+    & iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
