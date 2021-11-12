@@ -236,6 +236,10 @@ body {
 //Стили для секции faq
 @import "_faq";
 
+//Страница BLOG
+//Стили для секции blog-articles
+@import "_blog";
+
 
 @media (max-width: 500px) {
   .section {
