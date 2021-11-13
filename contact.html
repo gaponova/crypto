@@ -103,9 +103,9 @@
       <section class="contact section">
         <div class="contact__container container">
           <div class="contact__row">
-            <div class="contact__item item-contact">
+            <div class="contact__item contact__item_adress item-contact">
               <div class="item-contact__title">
-                <h3 class="title">Contact Us</h3>
+                <h3>Contact Us</h3>
               </div>
               <div class="contact-stack">
                 <div class="contact-stack__item">
@@ -124,8 +124,8 @@
                   </div>
                   <div class="contact-stack__info">
                     <h3 class="contact-stack__title">Phone Number</h3>
-                    <a href="tel:+88 (0) 101 0000 000">+88 (0) 101 0000 000 </a>
-                    <a href="tel:+88 (0) 202 0000 001">+88 (0) 202 0000 001</a>
+                    <a class="contact-stack__tel" href="tel:+88 (0) 101 0000 000">+88 (0) 101 0000 000 </a>
+                    <a class="contact-stack__tel" href="tel:+88 (0) 202 0000 001">+88 (0) 202 0000 001</a>
                   </div>
                 </div>
                 <div class="contact-stack__item">
@@ -134,22 +134,24 @@
                   </div>
                   <div class="contact-stack__info">
                     <h3 class="contact-stack__title">Email Address</h3>
-                    <a href="mailto:info@yourdomain.com ">info@yourdomain.com </a>
-                    <a href="mailto:name@yourdomain.com">name@yourdomain.com</a>
+                    <a class="contact-stack__email" href="mailto:info@yourdomain.com ">info@yourdomain.com </a>
+                    <a class="contact-stack__email" href="mailto:name@yourdomain.com">name@yourdomain.com</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="contact__item item-contact">
+            <div class="contact__item contact__item_message item-contact">
               <form class="contact-form" action="#" method="post">
                 <div class="contact-form__title">
-                  <h3 class="title">Need Help? Send Us A Message</h3>
+                  <h3 class="">Need Help? Send Us A Message</h3>
                 </div>
-                <input class="contact-form__first-name" type="text" name="first-name" placeholder="First Name">
-                <input class="contact-form__last-name" type="text" name="last-name" placeholder="Last Name">
-                <input class="contact-form__last-name" type="email" name="email" placeholder="Email Address">
+                <div class="contact-form__name">
+                  <input class="contact-form__first-name" type="text" name="first-name" placeholder="First Name">
+                  <input class="contact-form__last-name" type="text" name="last-name" placeholder="Last Name">
+                </div>
+                <input class="contact-form__email" type="email" name="email" placeholder="Email Address">
                 <textarea class="contact-form__message" name="message" placeholder="Your Message"></textarea>
-                <div class="conact__btn">
+                <div class="contact__btn">
                   <button type="submit" class="btn-token btn"><span>Buy token</span></button>
                 </div>
               </form>
