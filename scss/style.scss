@@ -241,8 +241,11 @@ body {
 @import "_blog";
 
 //Страница CONTACT
-//Стили для секции map
+//Стили для секции geo
 @import "_geo";
+
+//Стили для секции contact
+@import "_contact";
 
 
 @media (max-width: 500px) {
