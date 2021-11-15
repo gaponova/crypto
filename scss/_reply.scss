@@ -1,0 +1,68 @@
+.reply {
+  &.section {
+    padding-top: 0;
+  }
+
+  &__container {}
+
+  &__info {}
+
+  &__title {
+    @include font('Poppins', 4rem, 140%, 700, $f);
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @include font('Rubik', 1.6rem, 200%, 400, $f);
+    margin-bottom: 20px;
+  }
+}
+
+.reply-form {
+
+  &__field {
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: block;
+    @include font('Rubik', 1.6rem, 100%, 400, $f);
+    margin-bottom: 5px;
+  }
+
+  &__message {
+    width: 100%;
+    min-height: 200px;
+    overflow: auto;
+    color: $f;
+    resize: vertical;
+    background: $d-purple;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    width: 100%;
+    color: $f;
+    background: $d-purple;
+    padding: 12px 20px;
+    border-radius: 30px;
+  }
+
+  &__save {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__check {
+    margin-right: 15px;
+  }
+
+  &__info {}
+
+  &__btn {}
+}
+
+.btn-reply {}

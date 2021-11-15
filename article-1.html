@@ -93,7 +93,7 @@
           <h2 class="general__title title_big">Blog Single</h2>
         </div>
       </section>
-      <div class="article section">
+      <section class="article section">
         <div class="article__container container">
           <div class="article__row wow fadeInUp" data-wow-delay="0.3s">
             <div class="article__item item-post item-post_img">
@@ -117,7 +117,40 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="reply section">
+        <div class="reply__container container">
+          <div class="reply__info">
+            <h2 class="reply__title">Leave a Reply</h2>
+            <p class="reply__subtitle">Your email address will not be published. Required fields are marked *</p>
+            <form class="reply-form" action="#" method="post">
+              <div class="reply-form__field">
+                <label class="reply-form__label" for="comment">Comment</label>
+                <textarea class="reply-form__message" name="comment" id="comment"></textarea>
+              </div>
+              <div class="reply-form__field">
+                <label class="reply-form__label" for="author">Name*</label>
+                <input class="reply-form__input" id="author" name="author" type="text" required="required">
+              </div>
+              <div class="reply-form__field">
+                <label class="reply-form__label" for="email">Email*</label>
+                <input class="reply-form__input" type="email" name="email" id="email" required="required">
+              </div>
+              <div class="reply-form__field">
+                <label class="reply-form__label" for="url">Website</label>
+                <input class="reply-form__input" type="url" name="url" id="url">
+              </div>
+              <div class="reply-form__save">
+                <input class="reply-form__check" type="checkbox" name="save" id="save">
+                <label class="reply-form__info" for="save">Save my name, email, and website in this browser for the next time I comment.</label>
+              </div>
+              <div class="reply-form__btn">
+                <button type-"submit" class="btn-reply btn" value=""><span>Post Comment</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer section">
       <div class="footer__container container">

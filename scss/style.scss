@@ -251,6 +251,9 @@ body {
 //Стили для секции article
 @import "_article";
 
+//Стили для секции reply
+@import "_reply";
+
 
 @media (max-width: 500px) {
   .section {
@@ -263,7 +266,5 @@ body {
     &_big {
       font-size: 3.8rem;
     }
-
-
   }
 }
