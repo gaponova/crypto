@@ -247,6 +247,10 @@ body {
 //Стили для секции contact
 @import "_contact";
 
+//Страница ARTICLE
+//Стили для секции article
+@import "_article";
+
 
 @media (max-width: 500px) {
   .section {
