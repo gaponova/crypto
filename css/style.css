@@ -277,8 +277,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -492,7 +490,7 @@ body.touch .header-sub__list.open {
     padding: 10px 0;
   }
   .header::before {
-    background: rgba(48, 13, 80, 0.7);
+    background: #300d50;
   }
   .header__menu {
     position: fixed;
