@@ -3929,6 +3929,9 @@ body.touch .header-sub__list.open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.contact-stack__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -4045,6 +4048,7 @@ body.touch .header-sub__list.open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -4126,6 +4130,7 @@ body.touch .header-sub__list.open {
   background: #300D50;
   padding: 18px 25px 17px;
   border-radius: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -4159,6 +4164,7 @@ body.touch .header-sub__list.open {
   background: #300D50;
   padding: 18px 25px 17px;
   border-radius: 30px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

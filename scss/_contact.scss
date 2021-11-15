@@ -90,7 +90,10 @@
   &__item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
 
     @media (max-width: 992px) {
       display: block;
@@ -167,6 +170,7 @@
   &__name {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
       display: block;
@@ -214,6 +218,7 @@
     background: $purple;
     padding: 18px 25px 17px;
     border-radius: 30px;
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
       margin-bottom: 20px;
@@ -233,6 +238,7 @@
     background: $purple;
     padding: 18px 25px 17px;
     border-radius: 30px;
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
       margin-bottom: 20px;
